@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    display: flex;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -20em;
+}
+
+.history h2{
+    margin-top: -150px;
+    margin-left: 70px;
+}
+
+.history {
+    width: 200px;
+    padding: 10px;
+    margin-left: 300px;
+}
+
+.history li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    list-style: none;
+}
+
+.date-history h2{
+    margin-top: -150px;
+    margin-left: 70px;
+}
+
+.date-history{
+    width: 200px;
+    padding: 5px;
+}
+
+.date-history li{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    list-style: none;
+}
+
+.display {
+    width: 205px;
+    height: 50px;
+    margin: 1em 10px;
+    font-size: 20px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
+}
+
+.igual{
+    position: absolute;
+    margin-top: 220px;
+    width: 220px; 
+    }
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 768px) {
+    .calculator-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator {
+        margin-right: 0;
+        position: fixed;
+    }
+    .history{
+        margin-top: 33em;
+        margin-left: -14em;
+    }
+
+    .date-history{
+        margin-top: -5em;
+        margin-left: 14em;
+    }
+    
+    .igual{
+        bottom: -3em;
+        width: 220px; 
+        }
+   
+    
+}
